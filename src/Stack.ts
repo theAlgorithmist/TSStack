@@ -45,35 +45,35 @@
   }
 
   /**
-	 * Access the length or size of the stack
-	 * 
-	 * @return number - stack length
-	 */
-	 public get length(): number
-	 {
-	   return this._stack.length;
+   * Access the length or size of the stack
+   * 
+   * @return number - stack length
+   */
+   public get length(): number
+   {
+     return this._stack.length;
    }
 
   /**
-	 * Access the current stack access mode
-	 * 
-	 * @return number - STACK_TYPE.FIFO or STACK_TYPE.LIFO
-	 */
-	 public get access(): number
-	 {
-	   return this._access;
+   * Access the current stack access mode
+   * 
+   * @return number - STACK_TYPE.FIFO or STACK_TYPE.LIFO
+   */
+   public get access(): number
+   {
+     return this._access;
    }
 
   /**
-	 * Assign the current stack access mode
-	 * 
-	 * @param mode: number - STACK_TYPE.FIFO or STACK_TYPE.LIFO
+   * Assign the current stack access mode
+   * 
+   * @param mode: number - STACK_TYPE.FIFO or STACK_TYPE.LIFO
    * 
    * @teturn Nothing - Assigns the stack access mode to FIFO or LIFO, provided the input is valid
-	 */
-	 public set access(mode: number)
-	 {
-	   this._access = (mode == STACK_TYPE.FIFO || mode == STACK_TYPE.LIFO) ? mode : this._access;
+   */
+   public set access(mode: number)
+   {
+     this._access = (mode == STACK_TYPE.FIFO || mode == STACK_TYPE.LIFO) ? mode : this._access;
    }
 
   /**
@@ -170,12 +170,12 @@
    }
 
   /**
-	 * Clear stack
-	 * 
-	 * @return Nothing - stack is emptied and is ready for new data.  Access mode remains unchanged.
-	 */
-	 public clear(): void
-	 {
-	   this._stack.length = 0;
+   * Clear stack
+   * 
+   * @return Nothing - stack is emptied and is ready for new data.  Access mode remains unchanged.
+   */
+   public clear(): void
+   {
+     this._stack.length = 0;
    }
  }
