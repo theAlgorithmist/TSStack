@@ -24,7 +24,7 @@
 
  export enum STACK_TYPE 
  {
-	 'FIFO',
+   'FIFO',
    'LIFO'
  }
 
