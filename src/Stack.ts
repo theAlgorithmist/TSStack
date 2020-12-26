@@ -161,7 +161,7 @@
    *
    * @return Nothing There is no action for an empty stack; otherwise, the order of the stack is reversed.  This does not, however, affect future insertions and deletions from the stack.
    */
-   public revsere(): void
+   public reverse(): void
    {
      if (this._stack.length == 0)
        return;
